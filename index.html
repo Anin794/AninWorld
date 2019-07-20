@@ -15,14 +15,18 @@
             background-color: black;
         }
     </style>
-    <audio src="https://github.com/Anin794/DatOneWeirdDude.github.io/blob/master/Kool-The-Gang-Celebration-_-RetroJamz.com_%20(1).mp3" id="audio" autoplay> function playAudio() {
+    <audio src="https://github.com/Anin794/DatOneWeirdDude.github.io/blob/master/Kool-The-Gang-Celebration-_-RetroJamz.com_%20(1).mp3" id="audio" autoplay>
+const audio = document.getElementById('audio');
+ 
+
+function playAudio() {
   audio.play()
-    
+   
     .catch(err => {
-     
+      
       setTimeout(playAudio);
     });
 }
-playAudio();</audio>
- 
-
+playAudio();
+</audio>
+  
